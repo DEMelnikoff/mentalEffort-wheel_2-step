@@ -54,24 +54,32 @@ const exp = (function() {
 
     const html = {
 
-        intro_holeInOne: [`<div class='parent' style='text-align: left'></p>For the next 10 to 15 minutes, you'll be helping us answer the following question:<br>
+        intro_holeInOne: [`<div class='parent' style='text-align: left'></p>For the next 5 to 10 minutes, you'll be helping us answer the following question:<br>
             "What makes some games more immersive and engaging than others?"</p>
 
-            <p>Specifically, you'll play two games and provide feedback about each one. 
-            By playing games and providing feedback, you'll help us understand how to design games 
+            <p>Specifically, you'll play a game and provide feedback about your experience. 
+            By providing feedback, you'll help us understand how to design games 
             that are as immersive and engaging as possible.</p></div>`,
 
-            `<div class='parent'>The first game that you'll play is called Hole in One.</p>
-            <p>To learn about and play Hole in One, continue to the next screen.</p></div>`],
+            `<div class='parent'>The game that you'll play is called Spin the Wheel.</p>
+            <p>To learn about and play Spin the Wheel, continue to the next screen.</p></div>`],
 
-        intro_spinTheWheel: [`<div class='parent'><p>Thank you for playing and evaluating Hole in One!</p>
-            <p>The second and final game that you'll play is called Spin the Wheel.<br>
-            To learn about and play Spin the Wheel, continue to the next screen.</p></div>`,
+        intro_spinTheWheel: [`<div class='parent' style='text-align: left'>
+                <p>For the next 5 to 10 minutes, you'll be helping us answer the following question:<br>"What makes some games more immersive and engaging than others?"</p>
+
+                <p>Specifically, you'll play a game and provide feedback about your experience. 
+                By providing feedback, you'll help us understand how to design games 
+                that are as immersive and engaging as possible.</p>
+            </div>`,
+
+            `<div class='parent'>
+                <p>The game that you'll play is called Spin the Wheel.</p>
+                <p>To learn about and play Spin the Wheel, continue to the next screen.</p>
+            </div>`,
 
             `<div class='parent'>
                 <p>In Spin the Wheel, you'll spin a series of prize wheels.</p>
-                <p>Each time you spin a prize wheel, you'll earn points.
-                <br>The number of points you earn depends on where the wheel lands.</p>
+                <p>Each time you spin a prize wheel, you'll earn points.<br>The number of points you earn depends on where the wheel lands.</p>
                 <p>Your goal is to earn as many points as possible!</p>
             </div>`,
 
@@ -622,7 +630,7 @@ const exp = (function() {
 
 const timeline = [
     exp.consent, 
-    exp.intro_holeInOne, exp.holeInOne, 
+    //exp.intro_holeInOne, exp.holeInOne, 
     exp.intro_spinTheWheel, exp.wheel_practice, exp.attnChk, exp.postAttnChk, exp.spinTheWheel, 
     exp.demographics, exp.save_data];
 
