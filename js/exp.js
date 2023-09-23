@@ -62,7 +62,7 @@ const exp = (function() {
             that are as immersive and engaging as possible.</p></div>`,
 
             `<div class='parent'>The game that you'll play is called Spin the Wheel.</p>
-            <p>To learn about and play Spin the Wheel, continue to the next screen.</p></div>`],
+            <p>To learn how to play Spin the Wheel, continue to the next screen.</p></div>`],
 
         intro_spinTheWheel: [`<div class='parent' style='text-align: left'>
                 <p>For the next 5 to 10 minutes, you'll be helping us answer the following question:<br>"What makes some games more immersive and engaging than others?"</p>
@@ -99,8 +99,7 @@ const exp = (function() {
             `<div class='parent'>
                 <p>Practice is now complete! Soon, you'll play Spin the Wheel.</p>
                 <p>Remember: Your goal is to earn as many points as possible.</p>
-                <p>The amount of points you earn for each spin is equal to the number you land on. 
-                For example, if you land on a 3, you'll get 3 points.</p>
+                <p>The amount of points you earn for each spin is equal to the number you land on.<br>For example, if you land on a 3, you'll get 3 points.</p>
                 <p>You'll find out how many points you earned in total at the end of the game.</p>
             </div>`
         ],
@@ -631,7 +630,8 @@ const exp = (function() {
 const timeline = [
     exp.consent, 
     //exp.intro_holeInOne, exp.holeInOne, 
-    exp.intro_spinTheWheel, exp.wheel_practice, exp.attnChk, exp.postAttnChk, exp.spinTheWheel, 
+    //exp.intro_spinTheWheel, exp.wheel_practice, exp.attnChk, 
+    exp.postAttnChk, exp.spinTheWheel, 
     exp.demographics, exp.save_data];
 
 jsPsych.run(timeline);

@@ -628,9 +628,9 @@ const dmPsych = (function() {
     const updateScore = (points, color) => {
       score += points;
       spinnerData.score = score;
-      // scoreMsg.innerHTML = `<span style="color:${color}; font-weight: bolder">${score}</span>`;
+      scoreMsg.innerHTML = `<span style="font-weight: bolder">${score}</span>`;
       setTimeout(() => {
-        // scoreMsg.innerHTML = `${score}`
+        scoreMsg.innerHTML = `${score}`
         isSpinning = false;
         pointer.style.font = '1.2rem/0 sans-serif';
         pointer.textContent = '';
