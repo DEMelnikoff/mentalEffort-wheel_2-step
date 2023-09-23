@@ -630,7 +630,7 @@ const exp = (function() {
 const timeline = [
     exp.consent, 
     //exp.intro_holeInOne, exp.holeInOne, 
-    //exp.intro_spinTheWheel, exp.wheel_practice, exp.attnChk, 
+    exp.intro_spinTheWheel, exp.wheel_practice, exp.attnChk, 
     exp.postAttnChk, exp.spinTheWheel, 
     exp.demographics, exp.save_data];
 
