@@ -601,7 +601,7 @@ const exp = (function() {
 
 
         const demos = {
-            timeline: [taskComplete, meanOfEff, gender, age, ethnicity, english, finalWord]
+            timeline: [taskComplete, gender, age, ethnicity, english, finalWord]
         };
 
         return demos;
@@ -618,7 +618,7 @@ const exp = (function() {
     p.save_data = {
         type: jsPsychPipe,
         action: "save",
-        experiment_id: "lEWIqPCNEg4q",
+        experiment_id: "TKUl44SkWhni",
         filename: dmPsych.filename,
         data_string: ()=>jsPsych.data.get().csv()
     };
