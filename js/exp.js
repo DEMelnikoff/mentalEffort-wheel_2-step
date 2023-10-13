@@ -316,8 +316,8 @@ const exp = (function() {
     */
 
     // scales
-    var zeroToExtremely = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8<br>Extremely'];
-    var zeroToALot = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8<br>A lot'];
+    const zeroToExtremely = ["0<br>A little", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>Extremely"];
+    const zeroToALot = ['0<br>A little', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10<br>A lot'];
 
     // constructor functions
     function MakeFlowQs(game) {
@@ -330,32 +330,32 @@ const exp = (function() {
         Report the degree to which you felt immersed and engaged by answering the following questions.</p></div>`;
         this.questions = [
             {
-                prompt: `During ${game}, to what extent did you feel <strong>absorbed</strong> in what you were doing?`,
+                prompt: `During ${game}, how <strong>absorbed</strong> did you feel in what you were doing?`,
                 name: `absorbed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very absorbed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More absorbed than I've ever felt"],
                 required: true,
             },
             {
-                prompt: `During ${game}, to what extent did you feel <strong>immersed</strong> in what you were doing?`,
+                prompt: `During ${game}, how <strong>immersed</strong> did you feel in what you were doing?`,
                 name: `immersed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very immersed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More immersed than I've ever felt"],
                 required: true,
             },
             {
-                prompt: `During ${game}, to what extent did you feel <strong>engaged</strong> in what you were doing?`,
+                prompt: `During ${game}, how <strong>engaged</strong> did you feel in what you were doing?`,
                 name: `engaged`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very engaged", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More engaged than I've ever felt"],
                 required: true,
             },
             {
-                prompt: `During ${game}, to what extent did you feel <strong>engrossed</strong> in what you were doing?`,
+                prompt: `During ${game}, how <strong>engrossed</strong> did you feel in what you were doing?`,
                 name: `engrossed`,
-                labels: zeroToExtremely,
+                labels: ["0<br>Not very engrossed", '1', '2', '3', '4', '5', '6', '7', '8', '9', "10<br>More engrossed than I've ever felt"],
                 required: true,
             },
         ];
         this.randomize_question_order = false;
-        this.scale_width = 500;
+        this.scale_width = 700;
         this.data = {game: game, mi: jsPsych.timelineVariable('mi'), sectors: jsPsych.timelineVariable('sectors'), ev: jsPsych.timelineVariable('ev'), sd: jsPsych.timelineVariable('sd')};
         this.on_finish =(data) => {
             dmPsych.saveSurveyData(data);
@@ -403,7 +403,7 @@ const exp = (function() {
             },
         ];
         this.randomize_question_order = false;
-        this.scale_width = 500;
+        this.scale_width = 700;
         this.data = {game: game, mi: jsPsych.timelineVariable('mi'), sectors: jsPsych.timelineVariable('sectors'), ev: jsPsych.timelineVariable('ev'), sd: jsPsych.timelineVariable('sd')};
         this.on_finish = (data) => {
             dmPsych.saveSurveyData(data);
@@ -421,7 +421,7 @@ const exp = (function() {
             },
         ];
         this.randomize_question_order = false;
-        this.scale_width = 500;
+        this.scale_width = 700;
         this.data = {game: game, mi: jsPsych.timelineVariable('mi'), sectors: jsPsych.timelineVariable('sectors'), ev: jsPsych.timelineVariable('ev'), sd: jsPsych.timelineVariable('sd')};
         this.on_finish = (data) => {
             dmPsych.saveSurveyData(data);      
